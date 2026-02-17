@@ -1,0 +1,101 @@
+/* ----------------- Estilos generales ----------------- */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Contenedor principal */
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ----------------- Perfil (imagen + nombre) ----------------- */
+.profile-container {
+  overflow: hidden; /* mantiene la imagen flotante alineada */
+  margin-bottom: 20px;
+}
+
+.profile-container img {
+  float: left;          /* imagen a la izquierda */
+  width: 150px;         /* tamaño fijo */
+  height: auto;         /* mantiene proporción */
+  border-radius: 8px;   /* bordes redondeados */
+  margin-right: 20px;   /* espacio entre imagen y texto */
+}
+
+.profile-container .main-text {
+  overflow: hidden;     /* evita que el texto suba debajo de la imagen */
+}
+
+.profile-container h1 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.profile-container p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* ----------------- Secciones ----------------- */
+.main h3 {
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Experiencia laboral */
+.trabajo {
+  margin-bottom: 15px;
+}
+
+.trabajo h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.trabajo p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Secciones de habilidades, educación y contacto */
+.section-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3px;
+}
+
+.sidebar ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0 0 10px 0;
+}
+
+.sidebar li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* ----------------- Clear floats ----------------- */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
